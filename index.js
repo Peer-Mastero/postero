@@ -37,7 +37,7 @@ function signGoogle() {
     if (user) {
       userOb = user;
       if (window.location.pathname == "/pages/login/")
-        window.location.replace("/");
+        window.location.replace("/pages/mentees");
       loginBtn.classList.add("lg:hidden");
       small.classList.add("hidden");
     } else {
