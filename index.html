@@ -19,7 +19,7 @@
   <body>
     <nav
       aria-label="navigation"
-      class="px-4 py-3 z-10 font-Gilroy text-xl border-b-2 sticky top-0 flex justify-between items-center bg-white"
+      class="px-4 py-3 z-10 font-Gilroy text-lg border-b-2 sticky top-0 flex justify-between items-center bg-white"
     >
       <a class="font-bold leading-none" href="#">
         <img src="/images/logo.png" alt="" />
@@ -43,10 +43,20 @@
           <a class="hover:text-gray-500" href="#">Resources</a>
         </li>
         <li>
-          <a class="hover:text-gray-500" href="#">Become a support</a>
+          <div class="bg-[#00FF47] p-2 rounded-3xl py-1">Coming Soon</div>
         </li>
         <li>
-          <a class="hover:text-gray-500" href="#">Find peer support</a>
+          <a
+            class="hover:text-gray-500"
+            target="_blank"
+            href="https://forms.gle/yuuhDTD72LzthgFg9"
+            >Become a peer support</a
+          >
+        </li>
+        <li>
+          <a class="hover:text-gray-500" href="/pages/mentees/"
+            >Find peer support</a
+          >
         </li>
       </ul>
       <a
@@ -56,7 +66,7 @@
       >
       <a
         class="hidden text-sm lg:inline-block py-2 px-6 bg-black hover:border-black hover:bg-white border-[1px] hover:text-black text-white font-bold rounded-3xl transition duration-200"
-        href="#"
+        href="/pages/sign-up/"
         >Get Started</a
       >
     </nav>
@@ -88,19 +98,20 @@
           </button>
         </div>
         <div>
-          <ul>
-            <li class="mb-1">
+          <ul class="font-Gilroy">
+            <li class="mb-1 flex items-center">
               <a
                 class="block p-4 font-semibold text-black hover:bg-gray-50 hover:text-gray-500 rounded"
                 href="#"
                 >Resources</a
               >
+              <div class="bg-[#00FF47] p-2 rounded-3xl py-1">Coming Soon</div>
             </li>
             <li class="mb-1">
               <a
                 class="block p-4 text-sm font-semibold text-black hover:bg-gray-50 hover:text-gray-500 rounded"
                 href="#"
-                >Become Peer support</a
+                >Become a Peer support</a
               >
             </li>
             <li class="mb-1">
@@ -120,8 +131,8 @@
               >Log in</a
             >
             <a
-              class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-black hover:bg-gray-500 rounded-xl"
-              href="#"
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-black text-white border-[1px] border-black hover:bg-white hover:text-black rounded-xl login-btn-small"
+              href="/pages/sign-up/"
               >Get Started</a
             >
           </div>
@@ -153,9 +164,11 @@
           level with our innovative platform.
         </p>
         <div class="py-4">
-          <button class="bg-black text-white text-xl rounded-full px-5 py-2">
-            Get Started
-          </button>
+          <a
+            class="hidden text-sm lg:inline-block py-2 px-6 bg-black hover:border-black hover:bg-white border-[1px] hover:text-black text-white font-bold rounded-3xl transition duration-200"
+            href="/pages/sign-up/"
+            >Get Started</a
+          >
         </div>
       </div>
       <div class="w-full hidden md:flex min-w-[250px] relative max-w-xs">
@@ -170,11 +183,7 @@
       <div
         class="flex w-full flex-wrap items-center max-w-6xl mx-auto justify-around py-9"
       >
-        <img
-          src="/images/university images/0D4580F4-7C01-4C1F-A823-F47E4B591BD9."
-          alt=""
-          class=""
-        />
+        <img src="/images/university images/one.png" alt="" class="" />
         <img src="/images/university images/download.png" alt="" class="" />
         <img src="/images/university images/Knust_seal.png" alt="" class="" />
         <img src="/images/university images/ucclogo.png" alt="" class="" />
@@ -283,9 +292,12 @@
               >
               <span class="bg-yellow-200/50 p-2 rounded-full"> +3 </span>
             </p>
-            <button class="border-[1.6px] px-4 rounded-lg p-2 mt-5 w-fit">
+            <a
+              href="/pages/detail/"
+              class="border-[1.6px] px-4 rounded-lg p-2 mt-5 w-fit"
+            >
               view profile
-            </button>
+            </a>
           </div>
         </div>
 
@@ -309,9 +321,12 @@
               >
               <span class="bg-yellow-200/50 p-2 rounded-full"> +3 </span>
             </p>
-            <button class="border-[1.6px] px-4 rounded-lg p-2 mt-5 w-fit">
+            <a
+              href="/pages/detail/"
+              class="border-[1.6px] px-4 rounded-lg p-2 mt-5 w-fit"
+            >
               view profile
-            </button>
+            </a>
           </div>
         </div>
         <div
@@ -334,9 +349,12 @@
               >
               <span class="bg-yellow-200/50 p-2 rounded-full"> +3 </span>
             </p>
-            <button class="border-[1.6px] px-4 rounded-lg p-2 mt-5 w-fit">
+            <a
+              href="/pages/detail/"
+              class="border-[1.6px] px-4 rounded-lg p-2 mt-5 w-fit"
+            >
               view profile
-            </button>
+            </a>
           </div>
         </div>
         <div
@@ -359,34 +377,12 @@
               >
               <span class="bg-yellow-200/50 p-2 rounded-full"> +3 </span>
             </p>
-            <button class="border-[1.6px] px-4 rounded-lg p-2 mt-5 w-fit">
+            <a
+              href="/pages/detail/"
+              class="border-[1.6px] px-4 rounded-lg p-2 mt-5 w-fit"
+            >
               view profile
-            </button>
-          </div>
-        </div>
-        <div
-          class="flex flex-col border-[1.5px] rounded-lg p-4 justify-center items-center gap-2"
-        >
-          <div class="flex items-center justify-center">
-            <img
-              src="/images/featured peer support/Ellipse 1218-1.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="flex flex-col justify-center items-center text-center gap-2 w-full"
-          >
-            <strong> Nathan Offei Ansah </strong>
-            <p>University of ghana</p>
-            <p>
-              <span class="bg-yellow-200/50 p-2 rounded-2xl"
-                >Front end development</span
-              >
-              <span class="bg-yellow-200/50 p-2 rounded-full"> +3 </span>
-            </p>
-            <button class="border-[1.6px] px-4 rounded-lg p-2 mt-5 w-fit">
-              view profile
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -401,34 +397,28 @@
           >Become a peer support</strong
         >
         <p class="py-4 font-Gilroy">
-          Lorem ipsum dolor sit amet consectetur. Massa pellentesque sed feugiat
-          facilisi lobortis est id ac et. Augue blandit augue nibh risus nibh
-          neque. A nam pellentesque vel egestas dui aliquet aliquet. Sit a nulla
-          neque curabitur. Lectus magna enim vitae felis sit scelerisque laoreet
-          nulla sagittis. Nibh iaculis integer volutpat sollicitudin magna
-          pellentesque. Sed maecenas hendrerit adipiscing eget vitae leo vitae.
-          Ornare senectus fames congue cursus in turpis urna accumsan. Hendrerit
-          quam condimentum ultrices facilisis. Bibendum scelerisque at tempus
-          urna. Neque orci non sagittis diam pretium nunc mattis elit tincidunt.
-          Cras odio diam viverra commodo. Tristique aliquam egestas euismod
-          neque lorem blandit purus tortor. Tortor ut purus sit tortor quis
-          molestie. Nec quis mauris nunc enim donec. Leo in placerat amet nulla
-          sit. Iaculis at eu tellus dignissim. Est odio donec tincidunt
-          venenatis mauris. Quis at lacus nunc aliquam lacus nec. Tortor
-          tincidunt enim id sit vel diam nisi laoreet condimentum. Sed velit sed
-          tempus lobortis justo. Mattis mi augue tristique metus bibendum. Vel
-          neque mauris orci tellus consectetur. Aenean commodo est tincidunt in
-          curabitur. Suspendisse.
+          Are you passionate about sharing your skills and knowledge with
+          others? Do you enjoy helping others achieve their goals? Join our
+          platform as a peer support and become part of a community of
+          like-minded individuals who are dedicated to supporting and
+          collaborating with one another. As a peer support, you'll have the
+          opportunity to share your expertise with others who are looking to
+          improve their skills and achieve their goals. Whether you're skilled
+          in digital marketing, front-end development, copywriting, or any other
+          area, you can make a difference by sharing your knowledge and helping
+          others succeed
         </p>
-        <button
+        <a
+          href="https://forms.gle/yuuhDTD72LzthgFg9"
+          target="_blank"
           class="bg-violet-700 text-xl text-white rounded-full p-4 py-3 my-4"
         >
           Sign up as peer support
-        </button>
+        </a>
       </div>
     </div>
     <div
-      class="mt-36 flex px-6 flex-row-reverse justify-around w-full max-w-7xl mx-auto gap-4 flex-wrap"
+      class="mt-36 flex p-6 flex-row-reverse justify-around w-full mx-auto gap-4 flex-wrap bg-[#FCFBF7]"
     >
       <div class="w-full max-w-md">
         <img src="/images/findapeersupport.png" alt="" />
@@ -438,28 +428,22 @@
           Find a peer support</strong
         >
         <p class="py-4 font-Gilroy">
-          Lorem ipsum dolor sit amet consectetur. Massa pellentesque sed feugiat
-          facilisi lobortis est id ac et. Augue blandit augue nibh risus nibh
-          neque. A nam pellentesque vel egestas dui aliquet aliquet. Sit a nulla
-          neque curabitur. Lectus magna enim vitae felis sit scelerisque laoreet
-          nulla sagittis. Nibh iaculis integer volutpat sollicitudin magna
-          pellentesque. Sed maecenas hendrerit adipiscing eget vitae leo vitae.
-          Ornare senectus fames congue cursus in turpis urna accumsan. Hendrerit
-          quam condimentum ultrices facilisis. Bibendum scelerisque at tempus
-          urna. Neque orci non sagittis diam pretium nunc mattis elit tincidunt.
-          Cras odio diam viverra commodo. Tristique aliquam egestas euismod
-          neque lorem blandit purus tortor. Tortor ut purus sit tortor quis
-          molestie. Nec quis mauris nunc enim donec. Leo in placerat amet nulla
-          sit. Iaculis at eu tellus dignissim. Est odio donec tincidunt
-          venenatis mauris. Quis at lacus nunc aliquam lacus nec. Tortor
-          tincidunt enim id sit vel diam nisi laoreet condimentum. Sed velit sed
-          tempus lobortis justo. Mattis mi augue tristique metus bibendum. Vel
-          neque mauris orci tellus consectetur. Aenean commodo est tincidunt in
-          curabitur. Suspendisse.
+          By connecting with a peer support, you'll have the opportunity to
+          collaborate with someone who has demonstrated proficiency in the
+          skills you're interested in. Whether you're looking to learn digital
+          marketing, front-end development, copywriting, or any other skill, you
+          can find a skilled peer to work with. Our platform also offers
+          accountability tools to help you stay motivated and achieve your
+          goals. With personalized support and guidance, you'll be able to take
+          your education to the next level and achieve success.
         </p>
-        <button class="bg-violet-700 text-white text-xl rounded-full p-4 py-3">
+        <a
+          href="https://forms.gle/yuuhDTD72LzthgFg9"
+          target="_blank"
+          class="bg-violet-700 text-white text-xl rounded-full p-4 py-3"
+        >
           Sign up for peer support
-        </button>
+        </a>
       </div>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 mt-36 place-items-center">
@@ -476,17 +460,17 @@
           peers who have demonstrated proficiency in a particular skill.
         </p>
         <div class="px-10">
-          <button
-            class="bg-black text-white text-xl rounded-full px-5 py-2 mt-8"
+          <a
+            class="hidden text-sm lg:inline-block py-2 px-6 bg-black hover:border-black hover:bg-white border-[1px] hover:text-black text-white font-bold rounded-3xl transition duration-200"
+            href="/pages/sign-up/"
+            >Get Started</a
           >
-            Get Started
-          </button>
         </div>
       </div>
     </div>
 
     <div
-      class="text-center font-Gilroy flex-wrap py-4 flex w-full justify-between px-4"
+      class="text-center font-Gilroy flex-wrap py-4 flex w-full justify-between bg-[#FAFAFA] px-4"
     >
       <div class="flex items-center justify-center">
         <img src="/images/logo.png" alt="" />
@@ -504,7 +488,7 @@
         </li>
       </ul>
     </div>
-    <div class="w-full">
+    <div class="w-full bg-[#FAFAFA]">
       <div class="flex flex-wrap py-5">
         <img class="px-5" src="/images/social media/insta.png" alt="" />
         <img class="px-5" src="/images/social media/twitter.png" alt="" />
