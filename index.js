@@ -1,5 +1,4 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
-let userOb = null;
 import {
   getAuth,
   GoogleAuthProvider,
@@ -23,28 +22,26 @@ const auth = getAuth(app);
 document.querySelector(".google-btn")?.addEventListener("click", signGoogle);
 const loginBtn = document.querySelector(".login-btn");
 const small = document.querySelector(".login-btn-small");
+const profile = document.querySelector(".profile");
 function signGoogle() {
-  signInWithPopup(auth, provider)
-    .then((result) => {
-      window.user = result.user;
-    })
-    .catch((error) => {
-      alert("Something went wrong please try again");
-    });
+  signInWithPopup(auth, provider).catch((error) => {
+    alert("Something went wrong please try again");
+  });
 }
 (function () {
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      userOb = user;
       if (window.location.pathname == "/pages/login/")
         window.location.replace("/pages/mentees");
-      loginBtn.classList.add("lg:hidden");
-      small.classList.add("hidden");
+      loginBtn?.classList.add("lg:hidden");
+      small?.classList.add("hidden");
+      profile?.setAttribute("src", user.photoURL);
+      profile?.classList.add("flex");
     } else {
-      if (window.user && window.location.pathname == "/pages/login/")
-        userOb = null;
-      loginBtn.classList.add("lg:inline-block");
-      small.classList.add("block");
+      loginBtn?.classList.add("lg:inline-block");
+      small?.classList.add("block");
+      profile?.classList.add("hidden");
+      return null;
     }
   });
 })();

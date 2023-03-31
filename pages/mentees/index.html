@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
     <link rel="stylesheet" href="/output.css" />
     <title>mentee view list</title>
   </head>
@@ -49,7 +50,16 @@
       </div>
       <div class="flex gap-4 order-last lg:order-3">
         <button><img src="/images/notifications.png" alt="not" /></button>
-        <button><img src="/images/miniprofileimage.png" alt="mini" /></button>
+        <button class="rounded-full">
+          <img
+            referrerpolicy="“no-referrer”"
+            width="50"
+            height="50"
+            class="profile"
+            src="/images/miniprofileimage.png"
+            alt="mini"
+          />
+        </button>
       </div>
     </nav>
     <div
@@ -381,5 +391,6 @@
         </div>
       </div>
     </div>
+    <script src="/index.js" type="module"></script>
   </body>
 </html>
